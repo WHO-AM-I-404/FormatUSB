@@ -44,8 +44,10 @@
 **On Ubuntu/Debian:**
 ```bash
 sudo apt update
-sudo apt install -y build-essential qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
-sudo apt install -y parted dosfstools ntfs-3g exfat-utils e2fsprogs
+sudo apt upgrade -y
+
+sudo apt install -y build-essential qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools \
+parted dosfstools ntfs-3g e2fsprogs exfatprogs
 ```
 
 **On older systems, you might need:**
