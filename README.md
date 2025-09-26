@@ -57,8 +57,8 @@ sudo apt install -y exfat-fuse exfat-utils
 
 ```bash
 # Clone the repository
-git clone https://github.com/WHO-AM-I-404/formatusb.git
-cd formatusb
+git clone https://github.com/WHO-AM-I-404/formatusb..git
+cd formatusb.
 
 # Generate Makefile
 qmake
@@ -76,8 +76,8 @@ make
 sudo cp formatusb /usr/local/bin/
 
 # Make library accessible
-sudo mkdir -p /usr/lib/formatusb/
-sudo cp lib/formatusb_lib /usr/lib/formatusb/
+sudo mkdir -p /usr/lib/formatusb./
+sudo cp lib/formatusb_lib /usr/lib/formatusb./
 
 # Create desktop entry
 sudo tee /usr/share/applications/formatsub.desktop << EOF
@@ -257,7 +257,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## 🐛 Bug Reports & Feature Requests
 
-Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/formatusb/issues) page.
+Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/formatusb./issues) page.
 
 When reporting bugs, please include:
 - Your Linux distribution and version
@@ -268,4 +268,4 @@ When reporting bugs, please include:
 
 **Made with ❤️ for the Linux community**
 
-For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/formatusb)
+For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/formatusb.)
