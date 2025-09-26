@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Enhanced FormatUSB Library v1.0.0
+## Enhanced FormatUSB Library v1.0.0.1
 ## Copyright (C) 2025 FormatUSB Team
 ## Cross-platform compatibility for Debian/Ubuntu and derivatives
 ## Enhanced error handling and device detection
