@@ -494,7 +494,7 @@ void MainWindow::on_buttonAbout_clicked()
                        "<p align=\"center\">" + tr("Version: ") + VERSION + "</p>"
                        "<p align=\"center\"><h3>" + tr("Advanced USB formatting tool") + "</h3></p>"
                        "<p align=\"center\">" + tr("Enhanced USB device detection and formatting") + "</p>"
-                       "<p align=\"center\"><a href=\"https://github.com/WHO-AM-I-404/formatusb\">GitHub Repository</a></p>"
+                       "<p align=\"center\"><a href=\"https://github.com/WHO-AM-I-404/formatusb.\">GitHub Repository</a></p>"
                        "<p align=\"center\">" + tr("Copyright (C) 2025 FormatUSB Team") + "<br /><br /></p>",
                        "/usr/share/doc/formatusb/license.html", tr("%1 License").arg(this->windowTitle()), true);
     this->show();
@@ -503,7 +503,7 @@ void MainWindow::on_buttonAbout_clicked()
 // Help button clicked
 void MainWindow::on_buttonHelp_clicked()
 {
-    QString url = "https://github.com/WHO-AM-I-404/formatusb/edit/main/README.md";
+    QString url = "https://github.com/WHO-AM-I-404/formatusb./edit/main/README.md";
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
