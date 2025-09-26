@@ -1,11 +1,11 @@
 /**********************************************************************
  *  mainwindow.h
  **********************************************************************
- * Copyright (C) 2025 FormatUSB Team
+ *              Copyright (C) 2025 FormatUSB Team
  *
- * Authors: FormatUSB Development Team
+ *             Authors: FormatUSB Development Team
  *          Enhanced cross-platform USB formatting tool
- *          Modern GUI with improved USB detection
+ *            Modern GUI with improved USB detection
  *
  * This is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
