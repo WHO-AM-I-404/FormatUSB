@@ -253,7 +253,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 - Original FormatUSB project by MX Linux team
 - James Bowlin (BitJam) for live-usb-maker utilities
 - Qt Framework for the excellent GUI toolkit
-- The Linux community for testing and feedback
+
 
 ## 🐛 Bug Reports & Feature Requests
 
