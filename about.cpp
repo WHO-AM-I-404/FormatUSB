@@ -5,6 +5,7 @@
 #include <QApplication>
 #include <QCoreApplication>
 #include <QDialog>
+#include <QFile>
 #include <QFileInfo>
 #include <QIcon>
 #include <QMessageBox>
@@ -15,25 +16,26 @@
 #include <QVBoxLayout>
 #include <unistd.h>
 
-// display doc as nomal user when run as root
+// display doc as normal user when run as root
 void displayDoc(QString url, QString title, bool runned_as_root)
 {
     // Use standard xdg-open for cross-platform compatibility
-
     if (getuid() != 0) {
         QString cmd = "xdg-open " + url;
         system(cmd.toUtf8());
     } else {
-        system("su $(logname) -c \"env XDG_RUNTIME_DIR=/run/user/$(id -u $(logname)) xdg-open " + url.toUtf8() + "\"&");
+        system("su $(logname) -c \"env XDG_RUNTIME_DIR=/run/user/$(id -u $(logname)) xdg-open "
+               + url.toUtf8() + "\"&");
     }
 }
 
-void displayAboutMsgBox(QString title, QString message, QString licence_url, QString license_title, bool runned_as_root)
+void displayAboutMsgBox(QString title, QString message, QString licence_url,
+                        QString license_title, bool runned_as_root)
 {
     QMessageBox msgBox(QMessageBox::NoIcon, title, message);
-    QPushButton *btnLicense = msgBox.addButton(QObject::tr("License"), QMessageBox::HelpRole);
+    QPushButton *btnLicense   = msgBox.addButton(QObject::tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(QObject::tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton *btnCancel = msgBox.addButton(QObject::tr("Cancel"), QMessageBox::NoRole);
+    QPushButton *btnCancel    = msgBox.addButton(QObject::tr("Cancel"), QMessageBox::NoRole);
     btnCancel->setIcon(QIcon::fromTheme("window-close"));
 
     msgBox.exec();
@@ -47,8 +49,15 @@ void displayAboutMsgBox(QString title, QString message, QString licence_url, QSt
 
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
-        Cmd cmd;
-        text->setText(cmd.getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+
+        // Baca file CHANGELOG.txt di folder aplikasi
+        QFile file(QCoreApplication::applicationDirPath() + "/CHANGELOG.txt");
+        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            text->setText(QString::fromUtf8(file.readAll()));
+            file.close();
+        } else {
+            text->setText(QObject::tr("CHANGELOG.txt not found."));
+        }
 
         QPushButton *btnClose = new QPushButton(QObject::tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));

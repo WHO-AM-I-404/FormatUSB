@@ -1,0 +1,13 @@
+USBFormat v1.0.0 - 2025-09-26
+=============================
+
+Added:
+- Initial release after fork
+- GUI for USB formatting
+- Options: device, format, label, partition
+
+Changed:
+- Made 'lib/formatusb_lib' executable by default
+
+Fixed:
+- GUI now runs format automatically without manual chmod

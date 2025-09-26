@@ -91,7 +91,7 @@ void MainWindow::setup()
     cmd = new Cmd(this);
     cmdprog = new Cmd(this);
     connect(qApp, &QApplication::aboutToQuit, this, &MainWindow::cleanup);
-    this->setWindowTitle("USB Formatter Pro v" + QString(VERSION));
+    this->setWindowTitle("USB FORMAT v" + QString(VERSION));
     ui->buttonBack->setHidden(true);
     ui->stackedWidget->setCurrentIndex(0);
     ui->buttonCancel->setEnabled(true);
@@ -361,8 +361,9 @@ void MainWindow::cmdDone()
     ui->buttonBack->setEnabled(true);
     
     if (cmd && cmd->exitCode() == 0 && cmd->exitStatus() == QProcess::NormalExit) {
-        QMessageBox::information(this, tr("Success"), 
-            tr("USB device has been formatted successfully!\n\nYou can now safely remove the device."));
+       QMessageBox::information(this, tr("Success"),
+    tr("USB device has been formatted successfully!\n\nYou can now safely remove the device.\n\nThank you for using this tool!"));
+
         
         // Refresh device list
         ui->comboBoxUsbList->clear();
@@ -466,7 +467,7 @@ void MainWindow::on_buttonNext_clicked()
 
 void MainWindow::on_buttonBack_clicked()
 {
-    this->setWindowTitle("USB Formatter Pro v" + QString(VERSION));
+    this->setWindowTitle("USB FORMAT v" + QString(VERSION));
     ui->stackedWidget->setCurrentIndex(0);
     ui->buttonNext->setEnabled(true);
     ui->buttonBack->setDisabled(true);
@@ -484,11 +485,11 @@ void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
     displayAboutMsgBox(tr("About %1").arg(this->windowTitle()),
-                       "<p align=\"center\"><b><h2>USB Formatter Pro</h2></b></p>"
+                       "<p align=\"center\"><b><h2>USB Format</h2></b></p>"
                        "<p align=\"center\">" + tr("Version: ") + VERSION + "</p>"
                        "<p align=\"center\"><h3>" + tr("Advanced USB formatting tool") + "</h3></p>"
                        "<p align=\"center\">" + tr("Enhanced USB device detection and formatting") + "</p>"
-                       "<p align=\"center\"><a href=\"https://github.com/formatusb/formatusb\">GitHub Repository</a></p>"
+                       "<p align=\"center\"><a href=\"https://github.com/WHO-AM-I-404/formatusb\">GitHub Repository</a></p>"
                        "<p align=\"center\">" + tr("Copyright (C) 2025 FormatUSB Team") + "<br /><br /></p>",
                        "/usr/share/doc/formatusb/license.html", tr("%1 License").arg(this->windowTitle()), true);
     this->show();
@@ -497,7 +498,7 @@ void MainWindow::on_buttonAbout_clicked()
 // Help button clicked
 void MainWindow::on_buttonHelp_clicked()
 {
-    QString url = "file:///usr/share/doc/formatusb/help/formatusb.html";
+    QString url = "https://github.com/WHO-AM-I-404/formatusb/edit/main/README.md";
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
