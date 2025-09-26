@@ -446,7 +446,7 @@ checkpartitiontype()
 }
 
 main(){
-    echo "FormatUSB v1.0.0 - Starting format process..."
+    echo "FormatUSB v1.0.0.1 - Starting format process..."
     echo "Device: $device, Format: $format, Label: $label, Partition: $part"
     
     # Check dependencies first
