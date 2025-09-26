@@ -8,11 +8,10 @@ USB Formatter Pro adalah alat formatting USB yang modern dan user-friendly denga
 - **25 Sep 2025**: Updated copyright ke FormatUSB Team
 - **25 Sep 2025**: Enhanced USB detection dengan multiple detection methods
 - **25 Sep 2025**: Improved GUI dengan modern styling dan compact design
-- **25 Sep 2025**: Fixed build system dan workflow VNC setup
 - **25 Sep 2025**: Updated version ke 1.0.0.1 dengan branding yang konsisten
 
 ## User Preferences
-- **Copyright**: Harus menggunakan "FormatUSB Team" bukan MX Linux
+- **Copyright**: Harus menggunakan "FormatUSB Team"
 - **GUI Style**: Kompak dan solid dengan modern styling
 - **Version**: Konsisten menggunakan v1.0.0.1 di semua file
 - **Build**: Menggunakan Qt5 dengan C++20 standard
@@ -78,10 +77,6 @@ make clean && make
 # Check version
 ./formatusb --version
 ```
-
-### VNC Setup
-Application menggunakan VNC output untuk GUI. Replit secara otomatis akan membuka VNC pane ketika aplikasi GUI dijalankan. Tidak perlu konfigurasi tambahan.
-
 ### Dependencies
 - Qt5 (qtbase, widgets, core, gui)
 - C++ compiler (gcc)
@@ -97,6 +92,5 @@ Licensed under GPL v3 or later
 - Project di-import dari GitHub dengan struktur yang lebih clean
 - Semua error kompilasi sudah diperbaiki (77+ errors fixed)
 - Enhanced USB detection menggunakan multiple methods
-- VNC workflow setup untuk GUI applications
 - Modern styling dengan CSS-like properties
 - Compact window design untuk better usability
