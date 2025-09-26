@@ -3,8 +3,8 @@
  "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
  "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
 <policyconfig>
-  <action id="org.mxlinux.pkexec.formatusb">
-    <message gettext-domain="mx-launcher-l10n">Format USB</message>
+  <action id="org.usbformat.pkexec.formatusb">
+    <message gettext-domain="usbformat">Format USB</message>
     <icon_name>media-removable</icon_name>
     <defaults>
       <allow_any>no</allow_any>
@@ -13,5 +13,4 @@
     </defaults>
     <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/formatusb/formatusb_lib</annotate>
   </action>
-
 </policyconfig>

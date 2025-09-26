@@ -2,7 +2,7 @@
 # * Copyright (C) 2025 FormatUSB Team
 # *
 # * Authors: FormatUSB Development Team
-# *          FormatUSB v2.0.0 - Cross-platform USB formatting tool
+# *          FormatUSB v1.0.0 - Cross-platform USB formatting tool
 # *          Enhanced compatibility with Debian/Ubuntu and derivatives
 # *
 # * This is free software: you can redistribute it and/or modify
