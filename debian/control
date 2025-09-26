@@ -1,16 +1,16 @@
 Source: formatusb
 Section: admin
 Priority: optional
-Maintainer: Dolphin Oracle <dolphinoracle@gmail.com>
+Maintainer: DAVA Niko <formatusb1122@gmail.com>
 Build-Depends: debhelper-compat (= 13),
                qt6-base-dev,
                qt6-base-dev-tools,
                qt6-tools-dev,
                qt6-tools-dev-tools
 Standards-Version: 3.9.8
-Homepage: https://github.com/DolphinOracle/formatusb
-Vcs-Git: https://github.com/DolphinOracle/formatusb.git
-Vcs-Browser: https://github.com/DolphinOracle/formatusb
+Homepage: https://github.com/WHO-AM-I-404/formatusb
+Vcs-Git: https://github.com/WHO-AM-I-404/formatusb.git
+Vcs-Browser: https://github.com/WHO-AM-I-404/formatusb
 
 Package: formatusb
 Architecture: any
