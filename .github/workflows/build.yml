@@ -10,9 +10,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Build with Qt
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Qt and build tools
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential qt5-default qttools5-dev-tools qtbase5-dev
+
+      - name: Build FormatUSB
         run: |
           qmake
           make
