@@ -1,0 +1,28 @@
+# Build artifacts
+*.o
+moc_*
+ui_*
+qrc_*
+Makefile
+.qmake.stash
+
+# Executable
+formatusb
+
+# Logs
+*.log
+
+# IDE files
+*.user
+*.pro.user*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak
+
+# Translation files (keep source, ignore compiled)
+*.qm
