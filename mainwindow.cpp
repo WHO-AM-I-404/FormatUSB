@@ -257,19 +257,24 @@ QString MainWindow::buildOptionList()
         authentication = "";
     }
 
-    // Use lib/formatusb_lib script
-    QString scriptPath = QCoreApplication::applicationDirPath() + "/lib/formatusb_lib";
-    if (!QFile::exists(scriptPath)) {
-        scriptPath = "./lib/formatusb_lib";
-    }
+       // Gunakan path absolut di sistem
+    QString scriptPath = "/usr/local/lib/formatusb/formatusb_lib";
+
+   if (!QFile::exists(scriptPath)) {
+    QMessageBox::critical(this, tr("Error"),
+                          tr("Library file not found: %1").arg(scriptPath));
+    return QString();  // ✅ return string kosong
+}
+
 
     options = QString("%1 \"%2\" \"%3\" \"%4\" \"%5\" \"%6\"")
-                  .arg(authentication)
-                  .arg(scriptPath)
-                  .arg(device)
-                  .arg(format)
-                  .arg(label)
-                  .arg(partoption);
+              .arg(authentication)
+              .arg(scriptPath)
+              .arg(device)
+              .arg(format)
+              .arg(label)
+              .arg(partoption);
+
     
     options = options.trimmed();
     qDebug() << "Device:" << device << "Format:" << format << "Label:" << label;
