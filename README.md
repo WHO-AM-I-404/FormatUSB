@@ -1,7 +1,7 @@
 # FORMAT USB TEAM
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Version](https://img.shields.io/badge/Version-1.0.0.1-green.svg)](https://github.com/WHO-AM-I-404/usb-formatter-pro)
+[![Version](https://img.shields.io/badge/Version-1.0.0.1-green.svg)](https://github.com/WHO-AM-I-404/formatusb.)
 
 **FORMAT USB** is a modern, cross-platform graphical tool for formatting USB drives and removable storage devices on Linux. Built with Qt5/6, it provides an intuitive interface for safely formatting USB drives with various filesystem options.
 
