@@ -57,11 +57,11 @@ sudo apt install -y exfat-fuse exfat-utils
 
 ```bash
 # Clone the repository
-git clone https://github.com/WHO-AM-I-404/usbformat.git
-cd usbformat
+git clone https://github.com/WHO-AM-I-404/formatusb.git
+cd formatusb
 
 # Generate Makefile
-qmake src.pro
+qmake
 
 # Compile the project
 make
@@ -257,7 +257,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## 🐛 Bug Reports & Feature Requests
 
-Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/usbformat/issues) page.
+Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/formatusb/issues) page.
 
 When reporting bugs, please include:
 - Your Linux distribution and version
@@ -266,21 +266,6 @@ When reporting bugs, please include:
 - Application log output
 - Screenshots if applicable
 
-## 🔄 Version History
-
-### 2025.1.0 (Current)
-- Complete rebranding and modernization
-- Enhanced cross-platform compatibility
-- Improved error handling and safety checks
-- Modern Qt-based interface
-- Comprehensive documentation
-
-### Previous Versions
-- Based on original FormatUSB by MX Linux
-- Legacy versions focused on MX Linux compatibility
-
----
-
 **Made with ❤️ for the Linux community**
 
-For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/usbformat)
+For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/formatusb)
