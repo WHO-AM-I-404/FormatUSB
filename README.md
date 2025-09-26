@@ -5,7 +5,7 @@
 
 **USB Formatter Pro** is a modern, cross-platform graphical tool for formatting USB drives and removable storage devices on Linux. Built with Qt5/6, it provides an intuitive interface for safely formatting USB drives with various filesystem options.
 
-![USB Formatter Pro Interface](images/usb-formatter-pro-screenshot.png)
+![FORMAT USB](images/FORMAT.png)
 
 ## ✨ Features
 
