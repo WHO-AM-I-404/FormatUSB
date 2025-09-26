@@ -1,0 +1,18 @@
+# .github/workflows/build.yml
+name: Build FormatUSB
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build with Qt
+        run: |
+          qmake
+          make
