@@ -52,7 +52,11 @@ parted dosfstools ntfs-3g e2fsprogs exfatprogs
 
 **On older systems, you might need:**
 ```bash
-sudo apt install -y exfat-fuse exfat-utils
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y build-essential qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools \
+parted dosfstools ntfs-3g e2fsprogs exfat-fuse exfat-utils
+
 ```
 
 #### 2. Clone and Build
