@@ -1,7 +1,7 @@
 Source: formatusb
 Section: admin
 Priority: optional
-Maintainer: DAVA Niko <formatusb1122@gmail.com>
+Maintainer: Davanico <formatusb1122@gmail.com>
 Build-Depends: debhelper-compat (= 13),
                qt6-base-dev,
                qt6-base-dev-tools,
