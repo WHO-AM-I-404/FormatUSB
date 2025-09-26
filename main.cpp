@@ -1,11 +1,11 @@
 /**********************************************************************
  *  main.cpp
  **********************************************************************
- * Copyright (C) 2025 FormatUSB Team
+ *              Copyright (C) 2025 FormatUSB Team
  *
- * Authors: FormatUSB Development Team
+ *              Authors: FormatUSB Development Team
  *          Enhanced and modernized USB formatting tool
- *          Cross-platform compatible
+ *                  Cross-platform compatible
  *
  * This is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
