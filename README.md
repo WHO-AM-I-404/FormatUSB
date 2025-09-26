@@ -57,8 +57,8 @@ sudo apt install -y exfat-fuse exfat-utils
 
 ```bash
 # Clone the repository
-git clone https://github.com/WHO-AM-I-404/usb-formatter-pro.git
-cd usb-formatter-pro
+git clone https://github.com/WHO-AM-I-404/usbformat.git
+cd usbformat
 
 # Generate Makefile
 qmake src.pro
@@ -66,25 +66,25 @@ qmake src.pro
 # Compile the project
 make
 
-# The executable 'usb-formatter-pro' will be created in the project directory
+# The executable 'formatusb' will be created in the project directory
 ```
 
 #### 3. Install System-Wide (Optional)
 
 ```bash
 # Copy binary to system path
-sudo cp usb-formatter-pro /usr/local/bin/
+sudo cp formatusb /usr/local/bin/
 
 # Make library accessible
-sudo mkdir -p /usr/lib/usb-formatter-pro/
-sudo cp lib/formatusb_lib /usr/lib/usb-formatter-pro/
+sudo mkdir -p /usr/lib/formatusb/
+sudo cp lib/formatusb_lib /usr/lib/formatusb/
 
 # Create desktop entry
-sudo tee /usr/share/applications/usb-formatter-pro.desktop << EOF
+sudo tee /usr/share/applications/formatsub.desktop << EOF
 [Desktop Entry]
-Name=USB Formatter Pro
+Name=FORMAT USB
 Comment=Format USB drives and removable storage devices
-Exec=usb-formatter-pro
+Exec=formatusb
 Icon=drive-removable-media-usb
 Type=Application
 Categories=System;Utility;
@@ -101,12 +101,12 @@ sudo update-desktop-database
 
 **From Source Directory:**
 ```bash
-./usb-formatter-pro
+./formatusb
 ```
 
 **If Installed System-Wide:**
 ```bash
-usb-formatter-pro
+formatsub
 ```
 
 **Or find it in your applications menu under System Tools**
@@ -157,7 +157,7 @@ usb-formatter-pro
 **Permission Denied Errors:**
 ```bash
 # Ensure you're running with sufficient privileges
-sudo ./usb-formatter-pro
+sudo ./formatusb
 ```
 
 **Qt Library Not Found:**
@@ -257,7 +257,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## 🐛 Bug Reports & Feature Requests
 
-Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/usb-formatter-pro/issues) page.
+Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/usbformat/issues) page.
 
 When reporting bugs, please include:
 - Your Linux distribution and version
@@ -283,4 +283,4 @@ When reporting bugs, please include:
 
 **Made with ❤️ for the Linux community**
 
-For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/usb-formatter-pro)
+For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/usbformat)
