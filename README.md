@@ -3,7 +3,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Version](https://img.shields.io/badge/Version-1.0.0.1-green.svg)](https://github.com/WHO-AM-I-404/usb-formatter-pro)
 
-**USB Formatter Pro** is a modern, cross-platform graphical tool for formatting USB drives and removable storage devices on Linux. Built with Qt5/6, it provides an intuitive interface for safely formatting USB drives with various filesystem options.
+**FORMAT USB** is a modern, cross-platform graphical tool for formatting USB drives and removable storage devices on Linux. Built with Qt5/6, it provides an intuitive interface for safely formatting USB drives with various filesystem options.
 
 ![FORMAT USB](images/FORMAT.png)
 
@@ -106,7 +106,7 @@ sudo update-desktop-database
 
 **If Installed System-Wide:**
 ```bash
-formatsub
+formatusb
 ```
 
 **Or find it in your applications menu under System Tools**
@@ -186,7 +186,7 @@ Application logs are stored in `/tmp/formatter.log` for debugging purposes.
 ### Project Structure
 
 ```
-usb-formatter-pro/
+formatusb./
 ├── src.pro              # Qt project file
 ├── main.cpp             # Application entry point
 ├── mainwindow.cpp/h     # Main interface logic
