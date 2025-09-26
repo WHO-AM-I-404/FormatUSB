@@ -1,13 +1,11 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    directory: "/" 
+    directory: "/"   # cek workflow di root .github/workflows
     schedule:
       interval: "weekly"
-
-  - package-ecosystem: "apt"
-    directory: "/" 
-    schedule:
-      interval: "weekly"
-    ignore:
-      - dependency-name: "*"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
