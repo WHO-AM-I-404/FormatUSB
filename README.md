@@ -63,8 +63,8 @@ parted dosfstools ntfs-3g e2fsprogs exfat-fuse exfat-utils
 
 ```bash
 # Clone the repository
-git clone https://github.com/WHO-AM-I-404/formatusb..git
-cd formatusb.
+git clone https://github.com/WHO-AM-I-404/FormatUSB.git
+cd FormatUSB
 
 # Generate Makefile
 qmake
@@ -79,11 +79,11 @@ make
 
 ```bash
 # Copy binary to system path
-sudo cp formatusb /usr/local/bin/
+sudo cp FormatUSB /usr/local/bin/
 
 # Make library accessible
 sudo mkdir -p /usr/lib/formatusb./
-sudo cp lib/formatusb_lib /usr/lib/formatusb./
+sudo cp lib/formatusb_lib /usr/lib/FormatUSB/
 
 # Create desktop entry
 sudo tee /usr/share/applications/formatsub.desktop << EOF
@@ -192,7 +192,7 @@ Application logs are stored in `/tmp/formatter.log` for debugging purposes.
 ### Project Structure
 
 ```
-formatusb./
+FormatUSB/
 ├── src.pro              # Qt project file
 ├── main.cpp             # Application entry point
 ├── mainwindow.cpp/h     # Main interface logic
@@ -263,7 +263,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## 🐛 Bug Reports & Feature Requests
 
-Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/formatusb./issues) page.
+Please report bugs and request features through the [GitHub Issues](https://github.com/WHO-AM-I-404/FormatUSB/issues) page.
 
 When reporting bugs, please include:
 - Your Linux distribution and version
@@ -274,4 +274,4 @@ When reporting bugs, please include:
 
 **Made with ❤️ for the Linux community**
 
-For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/formatusb.)
+For more information, visit: [GitHub Repository](https://github.com/WHO-AM-I-404/FormatUSB)
