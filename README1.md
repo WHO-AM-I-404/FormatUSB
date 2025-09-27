@@ -22,7 +22,6 @@ USB Formatter Pro adalah alat formatting USB yang modern dan user-friendly denga
 - **Framework**: Qt5 (Widgets, Core, GUI)
 - **Language**: C++20
 - **Build System**: qmake + make
-- **Display**: VNC untuk GUI applications
 - **Platform**: Cross-platform (Linux focused)
 
 ### Key Files Structure
