@@ -32,4 +32,4 @@ EOF
 # 6. Update desktop database
 sudo update-desktop-database
 
-echo "Install selesai! Binary dapat dijalankan dari mana saja."
+echo "Install complete! Binary can be run from anywhere."
