@@ -1,8 +1,7 @@
 # USB Format v1.0.0.1
 
 ## Overview
-USB Formatter Pro adalah alat formatting USB yang modern dan user-friendly dengan GUI yang kompak dan solid. Project ini telah di-import dari GitHub dan diperbaiki untuk berjalan dengan sempurna di environment Replit dengan enhanced USB device detection capabilities.
-
+USB Formatter Pro adalah alat formatting USB yang modern dan user-friendly dengan GUI yang kompak dan solid. Project ini telah di-import dari GitHub dan diperbaiki untuk berjalan dengan sempurna.
 ## Recent Changes
 - **25 Sep 2025**: Project berhasil di-import dan diperbaiki semua error kompilasi
 - **25 Sep 2025**: Updated copyright ke FormatUSB Team
