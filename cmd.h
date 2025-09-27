@@ -19,7 +19,7 @@ public:
     // Jalankan perintah tunggal dan ambil output
     [[nodiscard]] bool run(const QString &cmd, QString &output, bool quiet = false);
 
-    // Jalankan program + argumen
+    // Jalankan program dengan argumen (lebih aman daripada string mentah)
     [[nodiscard]] bool run(const QString &program, const QStringList &arguments, bool quiet = false);
 
     // Shortcut untuk dapatkan output langsung
