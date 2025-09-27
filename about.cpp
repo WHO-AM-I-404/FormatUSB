@@ -1,6 +1,7 @@
 #include "about.h"
 #include "cmd.h"
 #include "version.h"
+
 #include <QApplication>
 #include <QCoreApplication>
 #include <QDialog>
