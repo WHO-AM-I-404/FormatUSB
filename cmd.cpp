@@ -67,3 +67,25 @@ bool Cmd::run(const QString &cmd, QString &output, bool quiet)
     output = out_buffer.join("\n").trimmed();
     return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
 }
+
+bool Cmd::run(const QString &program, const QStringList &arguments, bool quiet)
+{
+    out_buffer.clear();
+
+    if (state() != QProcess::NotRunning) {
+        qDebug() << "Process already running:" << this->program() << this->arguments();
+        return false;
+    }
+
+    if (!quiet) qDebug().noquote() << program << arguments.join(" ");
+
+    QEventLoop loop;
+    connect(this, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
+            this, &Cmd::cmdFinished, Qt::UniqueConnection);
+    connect(this, &Cmd::cmdFinished, &loop, &QEventLoop::quit, Qt::UniqueConnection);
+
+    start(program, arguments);
+    loop.exec();
+
+    return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
+}
