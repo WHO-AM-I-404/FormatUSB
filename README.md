@@ -151,8 +151,6 @@ git clone https://github.com/WHO-AM-I-404/FormatUSB.git
 # Enter project directory
 cd FormatUSB
 
-# (Optional) Checkout specific version tag
-git checkout v1.0.0.3
 ```
 
 #### Step 3: Build Application
