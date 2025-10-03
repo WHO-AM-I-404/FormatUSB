@@ -187,8 +187,7 @@ bash check_formatusb.sh
 # Expected: ✓ FormatUSB is in excellent condition!
 ```
 
-#### Step 5: Install System-Wide (Optional)
-
+#### Step 5: Install System-Wide (Optional & Manual)
 ```bash
 # Copy binary to system path
 sudo cp formatusb /usr/local/bin/formatusb
@@ -198,16 +197,13 @@ sudo mkdir -p /usr/lib/formatusb
 sudo cp lib/formatusb_lib /usr/lib/formatusb/
 sudo chmod +x /usr/lib/formatusb/formatusb_lib
 
-# Copy library
 sudo mkdir -p /usr/local/lib/formatusb/
 sudo cp lib/formatusb_lib /usr/local/lib/formatusb/
 sudo chmod 755 /usr/local/lib/formatusb/formatusb_lib
 
-
 # Copy icon
 sudo mkdir -p /usr/share/icons/hicolor/scalable/apps/
 sudo cp images/logo.svg /usr/share/icons/hicolor/scalable/apps/formatusb.svg
-
 
 # Create desktop entry
 sudo tee /usr/share/applications/formatusb.desktop << 'EOF'
@@ -226,9 +222,45 @@ EOF
 # Update desktop database
 sudo update-desktop-database
 
-# (Optional) Copy icon
+# (Optional) Copy icon for legacy systems
 sudo cp formatusb.png /usr/share/pixmaps/formatusb.png
 ```
+
+**Verify Installation:**
+
+```bash
+which formatusb
+# Expected: /usr/local/bin/formatusb
+
+formatusb --version
+# Expected: Version: 1.0.0.3
+```
+
+---
+
+#### Automatic Installation with `install.sh`
+
+If you don’t want to do manual steps one by one, you can use the provided `install.sh` script. This script automates the system-wide installation.
+
+**Usage:**
+
+```bash
+# Make sure FormatUSB is built first
+make
+
+# Run the installer
+sudo ./install.sh
+```
+
+This will automatically:
+
+* Copy the binary to `/usr/local/bin`
+* Copy required libraries
+* Install icons and desktop entry
+
+⚠️ **Note**: You must first compile the project (`make` to generate `formatusb`) before running `install.sh`. Otherwise, the installer won’t find the executable.
+
+---
 
 **Verify Installation:**
 ```bash
