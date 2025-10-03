@@ -1,0 +1,47 @@
+FormatUSB Contributors
+======================
+
+This file lists the people who have contributed to the FormatUSB project.
+The list is sorted by role and contribution area.
+
+----------------------------------------------------------------------
+Core Maintainer & Lead Developer
+----------------------------------------------------------------------
+
+- WHO-AM-I-404 <formatusb1122@gmail.com>
+  * Project founder and lead maintainer
+  * Major development of Qt GUI and core logic
+  * Documentation, packaging, and release management
+
+----------------------------------------------------------------------
+Additional Contributions (same author using alternate account)
+----------------------------------------------------------------------
+
+- Davanico
+  * Improvements to README.md and install.sh
+  * Testing and debugging on Ubuntu/Debian systems
+  * Git workflow optimization and repository maintenance
+
+----------------------------------------------------------------------
+Original Upstream Project
+----------------------------------------------------------------------
+
+- MX Linux Team
+  * Original FormatUSB implementation (forked project)
+  * Integration with MX Linux live system tools
+
+- James Bowlin (BitJam)
+  * live-usb-maker utilities (upstream inspiration)
+
+----------------------------------------------------------------------
+Acknowledgements
+----------------------------------------------------------------------
+
+- Qt Project
+  * Providing the Qt5/Qt6 framework used for GUI development
+
+- GNU Project
+  * Providing essential system utilities and toolchains
+
+- All community testers and bug reporters
+  * For feedback, suggestions, and continuous improvements
