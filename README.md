@@ -200,13 +200,24 @@ sudo mkdir -p /usr/lib/formatusb
 sudo cp lib/formatusb_lib /usr/lib/formatusb/
 sudo chmod +x /usr/lib/formatusb/formatusb_lib
 
+# Copy library
+sudo mkdir -p /usr/local/lib/formatusb/
+sudo cp lib/formatusb_lib /usr/local/lib/formatusb/
+sudo chmod 755 /usr/local/lib/formatusb/formatusb_lib
+
+
+# Copy icon
+sudo mkdir -p /usr/share/icons/hicolor/scalable/apps/
+sudo cp images/logo.svg /usr/share/icons/hicolor/scalable/apps/formatusb.svg
+
+
 # Create desktop entry
 sudo tee /usr/share/applications/formatusb.desktop << 'EOF'
 [Desktop Entry]
 Name=FormatUSB
 GenericName=USB Formatter
 Comment=Format USB drives and removable storage devices
-Exec=formatusb
+Exec=/usr/local/bin/formatusb
 Icon=drive-removable-media-usb
 Terminal=false
 Type=Application
