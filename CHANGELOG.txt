@@ -14,7 +14,7 @@ formatusb (1.0.0.2-1) UNRELEASED; urgency=medium
   * No longer depends on external CHANGELOG.txt file
   * Improved resource management and portability
 
- -- FormatUSB Team <formatusb1122@gmail.com>  Thu, 03 Oct 2025 00:00:00 +0700
+ -- FormatUSB Team <formatusb1122@gmail.com>  Thu, 02 Oct 2025 00:00:00 +0700
 
 formatusb (1.0.0.1-1) UNRELEASED; urgency=medium
 
@@ -24,4 +24,4 @@ formatusb (1.0.0.1-1) UNRELEASED; urgency=medium
   * Made 'lib/formatusb_lib' executable by default
   * GUI now runs format automatically without manual chmod
 
- -- WHO-AM-I-404 <formatusb1122@gmail.com.com>  Fri, 26 Sep 2025 12:00:00 +0700
+ -- formatusb <formatusb1122@gmail.com.com>  Fri, 26 Sep 2025 12:00:00 +0700
