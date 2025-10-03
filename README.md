@@ -262,19 +262,6 @@ This will automatically:
 
 ---
 
-**Verify Installation:**
-```bash
-# Check installation
-which formatusb
-# Expected: /usr/local/bin/formatusb
-
-# Run from anywhere
-formatusb --version
-# Expected: Version: 1.0.0.3
-```
-
----
-
 ## 🚀 Usage
 
 ### Running the Application
