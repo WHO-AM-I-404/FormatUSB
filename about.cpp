@@ -29,20 +29,16 @@ void displayDoc(QString url, QString title, bool runned_as_root)
     }
 }
 
-void displayAboutMsgBox(QString title, QString message, QString licence_url,
-                        QString license_title, bool runned_as_root)
+void displayAboutMsgBox(QString title, QString message, bool runned_as_root)
 {
     QMessageBox msgBox(QMessageBox::NoIcon, title, message);
-    QPushButton *btnLicense   = msgBox.addButton(QObject::tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(QObject::tr("Changelog"), QMessageBox::HelpRole);
     QPushButton *btnCancel    = msgBox.addButton(QObject::tr("Cancel"), QMessageBox::NoRole);
     btnCancel->setIcon(QIcon::fromTheme("window-close"));
 
     msgBox.exec();
 
-    if (msgBox.clickedButton() == btnLicense) {
-        displayDoc(licence_url, license_title, runned_as_root);
-    } else if (msgBox.clickedButton() == btnChangelog) {
+    if (msgBox.clickedButton() == btnChangelog) {
         QDialog *changelog = new QDialog();
         changelog->setWindowTitle(QObject::tr("Changelog"));
         changelog->resize(600, 500);
@@ -50,13 +46,13 @@ void displayAboutMsgBox(QString title, QString message, QString licence_url,
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
 
-        // Baca file CHANGELOG.txt di folder aplikasi
-        QFile file(QCoreApplication::applicationDirPath() + "/CHANGELOG.txt");
+        // Baca CHANGELOG.txt dari embedded resource
+        QFile file(":/docs/CHANGELOG.txt");
         if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
             text->setText(QString::fromUtf8(file.readAll()));
             file.close();
         } else {
-            text->setText(QObject::tr("CHANGELOG.txt not found."));
+            text->setText(QObject::tr("CHANGELOG not found in resources."));
         }
 
         QPushButton *btnClose = new QPushButton(QObject::tr("&Close"));

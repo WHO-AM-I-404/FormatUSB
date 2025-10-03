@@ -1,3 +1,21 @@
+formatusb (1.0.0.3-1) UNSTABLE; urgency=medium
+
+  * Minor update and improvements
+  * Updated documentation with detailed installation guide
+  * Added comprehensive health check script
+  * Improved README with troubleshooting section
+
+ -- FormatUSB Team <formatusb1122@gmail.com>  Thu, 03 Oct 2025 12:00:00 +0700
+
+formatusb (1.0.0.2-1) UNSTABLE; urgency=medium
+
+  * Removed license button from about dialog
+  * Embedded CHANGELOG into application resources
+  * No longer depends on external CHANGELOG.txt file
+  * Improved resource management and portability
+
+ -- FormatUSB Team <formatusb1122@gmail.com>  Thu, 03 Oct 2025 00:00:00 +0700
+
 formatusb (1.0.0.1-1) UNSTABLE; urgency=medium
 
   * Initial release after fork

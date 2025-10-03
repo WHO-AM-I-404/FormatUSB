@@ -496,7 +496,7 @@ void MainWindow::on_buttonAbout_clicked()
                        "<p align=\"center\">" + tr("Enhanced USB device detection and formatting") + "</p>"
                        "<p align=\"center\"><a href=\"https://github.com/WHO-AM-I-404/formatUSB\">GitHub Repository</a></p>"
                        "<p align=\"center\">" + tr("Copyright (C) 2025 FormatUSB Team") + "<br /><br /></p>",
-                       "/usr/share/doc/formatusb/license.html", tr("%1 License").arg(this->windowTitle()), true);
+                       true);
     this->show();
 }
 
